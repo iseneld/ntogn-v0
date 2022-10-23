@@ -14,8 +14,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="min-h-max p-8 flex flex-col">
+      <main className="flex flex-1 flex-col">
         <h1>Ntogn</h1>
+        <div>
+          <Image
+            src="/images/TP_TOME_s.jpg"
+            width={500}
+            height={500}
+            layout="responsive"
+            alt="Tome test pressing"
+          />
+          <Image
+            src="/images/T3A_s.jpg"
+            width={500}
+            height={500}
+            layout="responsive"
+            alt="Tome test pressing"
+          />
+        </div>
       </main>
 
       <Footer />

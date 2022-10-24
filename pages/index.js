@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Image from "next/image";
 
+import BaseThumbRecord from "../components/BaseThumbRecord";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -15,25 +15,44 @@ export default function Home() {
       </Head>
       <Header />
       <main className="flex flex-1 flex-col">
-        <h1>Ntogn</h1>
-        <div>
+        <BaseThumbRecord />
+        <article className="h-16 flex items-center">
           <Image
             src="/images/TP_TOME_s.jpg"
-            width={500}
-            height={500}
-            layout="responsive"
+            width={50}
+            height={50}
             alt="Tome test pressing"
           />
+          <h1>Record</h1>
+        </article>
+        <article>
           <Image
             src="/images/T3A_s.jpg"
-            width={500}
-            height={500}
+            width={200}
+            height={200}
             layout="responsive"
             alt="Tome test pressing"
           />
-        </div>
+        </article>
+        <article>
+          <Image
+            src="/images/T5A_s.jpg"
+            width={200}
+            height={200}
+            layout="responsive"
+            alt="Tome test pressing"
+          />
+        </article>
+        <article>
+          <Image
+            src="/images/TOME7A-SQUARE(4500).jpg"
+            width={200}
+            height={200}
+            layout="responsive"
+            alt="Tome test pressing"
+          />
+        </article>
       </main>
-
       <Footer />
     </>
   );

@@ -14,44 +14,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="flex flex-1 flex-col">
+      <main className="flex flex-1 flex-col md:flex-row md:flex-wrap md:content-start">
         <BaseThumbRecord />
-        <article className="h-16 flex items-center">
-          <Image
-            src="/images/TP_TOME_s.jpg"
-            width={50}
-            height={50}
-            alt="Tome test pressing"
-          />
-          <h1>Record</h1>
-        </article>
-        <article>
-          <Image
-            src="/images/T3A_s.jpg"
-            width={200}
-            height={200}
-            layout="responsive"
-            alt="Tome test pressing"
-          />
-        </article>
-        <article>
-          <Image
-            src="/images/T5A_s.jpg"
-            width={200}
-            height={200}
-            layout="responsive"
-            alt="Tome test pressing"
-          />
-        </article>
-        <article>
-          <Image
-            src="/images/TOME7A-SQUARE(4500).jpg"
-            width={200}
-            height={200}
-            layout="responsive"
-            alt="Tome test pressing"
-          />
-        </article>
+        <BaseThumbRecord />
+        <BaseThumbRecord />
+        <BaseThumbRecord />
+        <BaseThumbRecord />
+        <BaseThumbRecord />
+        <BaseThumbRecord />
+        <BaseThumbRecord />
       </main>
       <Footer />
     </>
